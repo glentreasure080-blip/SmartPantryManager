@@ -93,6 +93,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return suggestions;
     }
 
+    // A recipe qualifies only when the ingredient exists,
+    // the unit matches, and the available quantity is sufficient.
     private boolean canMakeRecipe(int recipeId, Map<String, PantryItem> pantry) {
         Cursor c = getReadableDatabase().query("recipe_ingredients", null, "recipe_id=?",
                 new String[]{String.valueOf(recipeId)}, null, null, null);
