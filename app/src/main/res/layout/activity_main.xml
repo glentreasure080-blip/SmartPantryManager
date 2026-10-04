@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="20dp"
+    android:background="#F5F7F5">
+
+    <TextView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Smart Pantry Manager" android:textSize="28sp"
+        android:textStyle="bold" android:textColor="#1B5E20"/>
+
+    <TextView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Reduce food waste by cooking with ingredients you already have."
+        android:textSize="16sp" android:textColor="#555555"
+        android:layout_marginTop="8dp" android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnPantry" android:layout_width="match_parent"
+        android:layout_height="56dp" android:text="My Pantry"
+        android:textColor="@android:color/white" android:background="@drawable/button_background"/>
+
+    <Button
+        android:id="@+id/btnSuggested" android:layout_width="match_parent"
+        android:layout_height="56dp" android:text="Suggested Recipes"
+        android:textColor="@android:color/white" android:background="@drawable/button_background"
+        android:layout_marginTop="14dp"/>
+
+    <TextView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="20 recipes are pre-loaded. A recipe is suggested only when every required ingredient and quantity is available."
+        android:textSize="15sp" android:textColor="#444444"
+        android:layout_marginTop="28dp"/>
+</LinearLayout>

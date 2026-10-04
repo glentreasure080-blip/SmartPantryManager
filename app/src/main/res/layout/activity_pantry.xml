@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#F5F7F5">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:padding="16dp" android:gravity="center_vertical">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="My Pantry" android:textSize="25sp"
+            android:textStyle="bold" android:textColor="#1B5E20"/>
+        <Button android:id="@+id/btnAdd" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="+ Add"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPantry" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1"
+        android:padding="12dp" android:clipToPadding="false"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:padding="8dp" android:background="#FFFFFF">
+        <Button android:id="@+id/navHome" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Home"/>
+        <Button android:id="@+id/navSuggested" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Suggested"/>
+    </LinearLayout>
+</LinearLayout>
