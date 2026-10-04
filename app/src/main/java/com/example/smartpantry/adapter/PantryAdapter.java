@@ -24,7 +24,7 @@ public class PantryAdapter extends RecyclerView.Adapter<PantryAdapter.Holder> {
         PantryItem x = items.get(pos);
         h.name.setText(x.getName());
         h.qty.setText("Quantity: " + x.getQuantity() + " " + x.getUnit());
-        h.expiry.setText(x.getExpiryDate() == null || x.getExpiryDate().isEmpty() ? "Expiry: Not set" : "Expiry: " + x.getExpiryDate());
+        h.expiry.setText(x.getExpiryDate() == null || x.getExpiryDate().isEmpty() ? "Expiry: Not specified" : "Expiry: " + x.getExpiryDate());
         h.edit.setOnClickListener(v -> listener.onEdit(x));
         h.delete.setOnClickListener(v -> listener.onDelete(x));
     }
